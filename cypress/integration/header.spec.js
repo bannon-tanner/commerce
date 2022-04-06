@@ -16,7 +16,7 @@ describe('Header', () => {
 
   // I don't think this test does what the tutorial wanted it to do
   // it does not wait for the page to load before testing the result
-  it.only('the search bar returns the correct search results', () => {
+  it('the search bar returns the correct search results', () => {
     cy.getBySel('search-input').eq(0).type('sql{enter}')
 
     cy.getBySel('product-tag').within(() => {
