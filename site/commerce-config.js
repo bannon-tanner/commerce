@@ -6,8 +6,7 @@ const path = require('path')
 const fs = require('fs')
 const merge = require('deepmerge')
 const prettier = require('prettier')
-// const core = require('@vercel/commerce/config')
-const core = require('../packages/commerce/config')
+const core = require('@vercel/commerce/config')
 
 const PROVIDERS = [
   '@vercel/commerce-local',
