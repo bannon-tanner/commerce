@@ -14,7 +14,7 @@ jobs:
         with:
           runTests: false
 
-      - run: npm run build
+      - run: yarn build
         env:
           COMMERCE_PROVIDER: ${{ secrets.COMMERCE_PROVIDER }}
           NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN: ${{ secrets.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN }}
@@ -47,7 +47,7 @@ jobs:
       - name: "Chrome E2E Tests"
         uses: cypress-io/github-action@v2
         with:
-          start: npm run start
+          start: yarn start
           wait-on: "http://localhost:3000"
           browser: chrome
           record: true
